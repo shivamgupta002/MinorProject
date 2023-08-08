@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8CABFF;
+
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    border-radius: 15px;
+    width: 30rem;
+    height: 10rem;
+    background-color:transparent;
+
+}
+
+.emojis,
+.stars {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+}
+
+.emojis {
+    width: 3.9rem;
+    /* border: 1px solid green; */
+    overflow-x: hidden;
+}
+
+.active{
+    color: yellow;
+    /* background-color: yellow; */
+}
