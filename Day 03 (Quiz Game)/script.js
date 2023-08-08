@@ -1,43 +1,43 @@
 const questions = [
   {
-    que: "Which of the following option leads to the portability and security of java ?",
-    a: "ByteCode is executed by JVM",
-    b: "The applet makes the Java code secure and portable",
-    c: "Use of exception handling",
-    d: "Dynamic binding between objects",
-    correct: "a",
-  },
-  {
-    que: "Which of the following is not a Java features?",
-    a: "Dynamic",
-    b: "Architecture Neutral",
-    c: "Use of pointers",
-    d: "Object-oriented",
-    correct: "c",
-  },
-  {
-    que: "The \u0021 article referred to as a",
-    a: "Unicode escape sequence",
-    b: "Octal escape",
-    c: "Hexadecimal",
-    d: "Line feed",
-    correct: "a",
-  },
-  {
-    que: "_____ is used to find and fix bugs in the Java programs.",
-    a: "JVM",
-    b: "JRE",
-    c: "JDK",
-    d: "JDB",
+    que: "Which one of the following also known as Conditional Expression:",
+    a: "Alternative to if-else",
+    b: "Switch statement",
+    c: "If-then-else statement",
+    d: "immediate if",
     correct: "d",
   },
   {
-    que: "What is the return type of the hashCode() method in the Object class ?",
-    a: "Object",
-    b: "int ",
-    c: "long",
-    d: "void",
+    que: "Which one of the following is the correct way for calling the JavaScript code?",
+    a: "Preprocessor",
+    b: "Triggering Event",
+    c: "RMI",
+    d: "Function/Method",
+    correct: "d",
+  },
+  {
+    que: "When interpreter encounters an empty statements, what it will do",
+    a: "Shows a warning",
+    b: "Prompts to complete the statement",
+    c: "Throws an error",
+    d: "Ignores the statements",
+    correct: "d",
+  },
+  {
+    que: " Which of the following variables takes precedence over the others if the names are the same?",
+    a: "Global variable",
+    b: "The local element",
+    c: "The two of the above",
+    d: "None of the above",
     correct: "b",
+  },
+  {
+    que: " Which of the following type of a variable is volatile ?",
+    a: "Mutable variable",
+    b: "Dynamic variable ",
+    c: "Volatile variable",
+    d: "Immutable variable",
+    correct: "a",
   },
 ];
 let index = 0;
@@ -75,9 +75,9 @@ const submitQuiz = () => {
     nextQuestion();
   }
 };
-//Next button
+//Previous button
 const previousButton = () => {
-  if (index < numberOfQuestions - 1) {
+  if (index < numberOfQuestions ) {
     index--;
     loadQuestion();
   } else {
