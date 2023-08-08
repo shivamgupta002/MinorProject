@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+main {
+    width: 70%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 0.5rem;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+}
+
+.input,
+.btn {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.input {
+    width: 20%;
+    height: 2.5rem;
+    font-size: 1rem;
+}
+
+.box2 {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: rgba(240, 245, 169, 0.747);
+    color: #3aa868;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.para {
+    letter-spacing: 0.09rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.copyBtn {
+    padding: 0.5rem 0.9rem;
+    color: #fff;
+    background: rgb(82, 122, 146);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-left: 0.3rem;
+    font-size: 1rem;
+    display: none;
+}
+.copyBtn:hover{
+    background-color: #fff;
+    color: rgb(82, 122, 146);   
+}
+.copyBtn:active{
+    color: #fff;
+    background-color: rgb(82, 122, 146);   
+}
