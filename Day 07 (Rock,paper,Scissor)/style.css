@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    /* min-height: 40%; */
+    /* width: 50%; */
+    height: auto;
+    width: auto;
+    padding: 1rem 2rem;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    margin: 0.5rem 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.line_h2 {
+    color: #457c92;
+    font-size: 1.4rem;
+    margin: 0.2rem 0.9rem;
+    font-weight: 600;
+}
+
+.line_span {
+    font-size: 1.3rem;
+    color: #459268;
+}
+
+.mt_1 {
+    margin-top: 1rem;
+}
+
+.heading {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    color: #459268;
+}
+
+.button_group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.6rem 0;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.button_group button {
+    padding: 0.8rem 1.3rem;
+    background-color: #457c92;
+}
+
+.reset button {
+    padding: 0.8rem 2rem;
+    background-color: #7a7c7c;
+    margin-right: 1.35rem;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* ########## Respoonsive ########### */
+@media screen and (max-width: 980px) {
+    .line {
+        margin: 0.5rem 0;
+    }
+}
+
+/* ########## Respoonsive ########### */
+@media screen and (max-width: 280px) {
+    .button_group {
+
+        flex-wrap: wrap;
+    }
+
+    button {
+        margin: 0.2rem 0.8rem;
+    }
+}
