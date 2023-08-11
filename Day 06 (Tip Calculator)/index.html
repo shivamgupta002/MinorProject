@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- amount*(percent/100) -->
+    <div class="container">
+        <div class="center">
+            <h2 class="heading">Tip Calculator</h2>
+        </div>
+        <div class="row">
+            <label for="amount_field" class="label">Amount</label>
+            <input type="number" name="number" id="amount_field" class="input" placeholder="Enter Amount">
+        </div>
+        <div class="row">
+            <label for="tip_field" class="label">Tip</label>
+            <input type="number" name="number" id="tip_field" class="input" placeholder="Enter Tip %">
+        </div>
+        <div class="center">
+            <button type="submit" class="button_submit" id="submit">Calculate</button>
+        </div>
+        <div class="result"></div>
+    </div>
+</body>
+
+</html>
