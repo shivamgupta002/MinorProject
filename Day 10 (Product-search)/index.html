@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Product-list</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link disabled" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="text" placeholder="Search" id="search-item" aria-label="Search" onkeyup="search()">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ################################################### -->
+    <section class="center">
+        <div class="box" id="product-list">
+            <div class="product" id="product">
+                <img src="https://th.bing.com/th/id/OIP.qiJM7-B2QLhGG0va9oDvXgAAAA?pid=ImgDet&rs=1" alt="sneaker"
+                    class="img">
+                <div class="content">
+                    <h2>Puma sneaker</h2>
+                    <h5>$125</h5>
+                </div>
+            </div>
+            <div class="product" id="product">
+                <img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,q_auto,w_700/c_pad,w_700/R1370003-01"
+                    alt="sneaker" class="img">
+                <div class="content">
+                    <h2>Canada Goose</h2>
+                    <h5>$85</h5>
+                </div>
+            </div>
+            <div class="product" id="product">
+                <img src="https://th.bing.com/th/id/R.d87c8491923989c033db1e940e287898?rik=3r6w7aPr6dkYbQ&riu=http%3a%2f%2fc.shld.net%2frpx%2fi%2fs%2fi%2fspin%2f-122%2fprod_12183852112%3f%3fhei%3d64%26wid%3d64%26qlt%3d50&ehk=ML9M4KPd8HSHnznn3Dur5fIxuNExEyJSaxSQnMzGr8o%3d&risl=&pid=ImgRaw&r=0"
+                    alt="sneaker" class="img">
+                <div class="content">
+                    <h2>Reebok sneaker</h2>
+                    <h5>$105</h5>
+                </div>
+            </div>
+            <div class="product" id="product">
+                <img src="https://th.bing.com/th/id/OIP.TWD0eGrABDpkyWLH-q4KfgAAAA?pid=ImgDet&w=400&h=400&rs=1"
+                    alt="sneaker" class="img">
+                <div class="content">
+                    <h2>HP Pavilion Laptop</h2>
+                    <h5>$850</h5>
+                </div>
+            </div>
+            <div class="product" id="product">
+                <img src="https://pngimg.com/uploads/jacket/jacket_PNG8027.png" alt="sneaker" class="img">
+                <div class="content">
+                    <h2>U.S. POLO Jacket</h2>
+                    <h5>$120</h5>
+                </div>
+            </div>
+            <div class="product" id="product">
+                <img src="https://images.footlocker.com/is/image/FLEU/314206439904?wid=150&hei=150&fmt=png-alpha"
+                    alt="sneaker" class="img">
+                <div class="content">
+                    <h2>Adidas sneaker</h2>
+                    <h5>$95</h5>
+                </div>
+            </div>
+            <div class="product" id="product">
+                <img src="https://m.media-amazon.com/images/I/612tBokgSpL._AC_UL320_.jpg" alt="sneaker" class="img">
+                <div class="content">
+                    <h2>Both t-shirt</h2>
+                    <h5>$75</h5>
+                </div>
+            </div>
+            <div class="product" id="product">
+                <img src="https://m.media-amazon.com/images/I/61v1oYKsWPL._AC_UL320_.jpg" alt="sneaker" class="img">
+                <div class="content">
+                    <h2>U.S. POLO t-shirt</h2>
+                    <h5>$55</h5>
+                </div>
+            </div>
+            <div class="product" id="product">
+                <img src="https://th.bing.com/th/id/R.ecac885d770242b7e4a23cb853c5facc?rik=5KzHA3PIMpeMdg&riu=http%3a%2f%2fpngimg.com%2fuploads%2fjacket%2fjacket_PNG8030.png&ehk=5Ms%2bXla6AlvFGzT%2bHphNb54OcOS1oJDZN48Dist6MhY%3d&risl=&pid=ImgRaw&r=0"
+                    alt="sneaker" class="img">
+                <div class="content">
+                    <h2>Zara Jacket</h2>
+                    <h5>$105</h5>
+                </div>
+            </div>
+            <div class="product" id="product">
+                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1663352561/Croma%20Assets/Computers%20Peripherals/Laptop/Images/252126_0_xhztnc.png/mxw_1440,s_webp,f_auto"
+                    alt="sneaker" class="img">
+                <div class="content">
+                    <h2>ASUS Laptop</h2>
+                    <h5>$955</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
